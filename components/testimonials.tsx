@@ -5,7 +5,7 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "After struggling with hip and back pain for over two years and seeing multiple doctors without answers, I finally found Juliet. She immediately made me feel heard, safe, and confident we could get to the root cause. Thanks to her care, I’m finally back to biking and doing the activities I love again.",
+      "After struggling with hip and back pain for over two years and seeing multiple doctors without answers, I finally found Juliet. She immediately made me feel heard, safe, and confident we could get to the root cause. Thanks to her care, I'm finally back to biking and doing the activities I love again.",
     name: "Sascha K",
     title: "Engineer, Dexcom",
     rating: 5,
