@@ -1,11 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import {
   Building2,
   Home,
   Video,
   Sparkles,
   Waves,
+  ArrowRight,
 } from "lucide-react";
 
 const services = [
@@ -14,6 +16,7 @@ const services = [
     title: "In Clinic",
     description:
       "One-on-one hour-long sessions at our home base clinic in Palo Alto. Fully individualized treatment focusing on restoring function, reducing pain, and improving movement quality.",
+    href: "/services/in-clinic",
   },
   {
     icon: Home,
@@ -61,29 +64,43 @@ export function Services() {
 
         {/* Services grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {services.map((service, index) => (
-            <div
-              key={service.title}
-              className="group relative p-6 lg:p-8 rounded-2xl bg-card border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300"
-              style={{ animationDelay: `${index * 50}ms` }}
-            >
-              {/* Icon */}
-              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                <service.icon className="h-6 w-6" />
-              </div>
+          {services.map((service, index) => {
+            const CardWrapper = service.href ? Link : "div";
+            const cardProps = service.href ? { href: service.href } : {};
+            
+            return (
+              <CardWrapper
+                key={service.title}
+                {...cardProps}
+                className="group relative p-6 lg:p-8 rounded-2xl bg-card border border-border hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 block"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                {/* Icon */}
+                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <service.icon className="h-6 w-6" />
+                </div>
 
-              {/* Content */}
-              <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
-                {service.title}
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {service.description}
-              </p>
+                {/* Content */}
+                <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {service.description}
+                </p>
 
-              {/* Hover accent */}
-              <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary to-accent rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
-            </div>
-          ))}
+                {/* Learn more indicator for linked services */}
+                {service.href && (
+                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                    Learn more
+                    <ArrowRight className="h-4 w-4" />
+                  </div>
+                )}
+
+                {/* Hover accent */}
+                <div className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary to-accent rounded-b-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
+              </CardWrapper>
+            );
+          })}
         </div>
       </div>
     </section>

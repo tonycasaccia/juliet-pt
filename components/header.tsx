@@ -18,26 +18,31 @@ const services = [
     icon: Building2,
     title: "In Clinic",
     description: "One-on-one hour-long sessions at our Palo Alto clinic.",
+    href: "/services/in-clinic",
   },
   {
     icon: Home,
     title: "Home Visits",
     description: "One-on-one sessions in the comfort of your own home.",
+    href: "#services",
   },
   {
     icon: Video,
     title: "Virtual",
     description: "One-on-one hour-long sessions virtually.",
+    href: "#services",
   },
   {
     icon: Sparkles,
     title: "Concierge",
     description: "Personalized premium care. Email for details.",
+    href: "#services",
   },
   {
     icon: Waves,
     title: "Aquatic Therapy",
     description: "Specialized aquatic rehabilitation at Burgess Pool.",
+    href: "#services",
   },
 ];
 
@@ -97,7 +102,7 @@ export function Header() {
                     {services.map((service) => (
                       <a
                         key={service.title}
-                        href="#services"
+                        href={service.href}
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-secondary/80 transition-colors group/item"
                       >
                         <div className="flex-shrink-0 h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-primary-foreground transition-colors">
@@ -172,7 +177,7 @@ export function Header() {
                   {services.map((service) => (
                     <a
                       key={service.title}
-                      href="#services"
+                      href={service.href}
                       className="flex items-center gap-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
