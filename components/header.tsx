@@ -6,56 +6,38 @@ import {
   Menu,
   X,
   ChevronDown,
-  Activity,
-  Zap,
-  Target,
-  Shield,
-  TrendingUp,
-  RotateCcw,
-  Dumbbell,
-  Heart,
+  Building2,
+  Home,
+  Video,
+  Sparkles,
+  Waves,
 } from "lucide-react";
 
 const services = [
   {
-    icon: Activity,
-    title: "Physical Therapy",
-    description: "Comprehensive rehabilitation for injuries and chronic conditions.",
+    icon: Building2,
+    title: "In Clinic",
+    description: "One-on-one hour-long sessions at our Palo Alto clinic.",
   },
   {
-    icon: Zap,
-    title: "Sports Rehabilitation",
-    description: "Specialized recovery programs for athletes at all levels.",
+    icon: Home,
+    title: "Home Visits",
+    description: "One-on-one sessions in the comfort of your own home.",
   },
   {
-    icon: Target,
-    title: "Performance Optimization",
-    description: "Fine-tune movement patterns for peak athletic potential.",
+    icon: Video,
+    title: "Virtual",
+    description: "One-on-one hour-long sessions virtually.",
   },
   {
-    icon: Shield,
-    title: "Injury Prevention",
-    description: "Proactive screening to address injury risks early.",
+    icon: Sparkles,
+    title: "Concierge",
+    description: "Personalized premium care. Email for details.",
   },
   {
-    icon: TrendingUp,
-    title: "Mobility & Movement Analysis",
-    description: "Advanced assessment using cutting-edge technology.",
-  },
-  {
-    icon: RotateCcw,
-    title: "Return-to-Sport Training",
-    description: "Structured protocols to safely return to competition.",
-  },
-  {
-    icon: Dumbbell,
-    title: "Strength & Conditioning",
-    description: "Integrated programs to enhance overall performance.",
-  },
-  {
-    icon: Heart,
-    title: "Recovery Programs",
-    description: "Customized recovery including manual therapy and dry needling.",
+    icon: Waves,
+    title: "Aquatic Therapy",
+    description: "Specialized aquatic rehabilitation at Burgess Pool.",
   },
 ];
 
@@ -110,8 +92,8 @@ export function Header() {
 
               {/* Dropdown Menu */}
               <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                <div className="w-[600px] bg-background/95 backdrop-blur-xl border border-border rounded-2xl shadow-xl p-6">
-                  <div className="grid grid-cols-2 gap-3">
+                <div className="w-[480px] bg-background/95 backdrop-blur-xl border border-border rounded-2xl shadow-xl p-6">
+                  <div className="grid grid-cols-1 gap-2">
                     {services.map((service) => (
                       <a
                         key={service.title}
