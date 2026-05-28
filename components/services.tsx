@@ -1,64 +1,43 @@
 "use client";
 
 import {
-  Activity,
-  Zap,
-  Target,
-  Shield,
-  TrendingUp,
-  RotateCcw,
-  Dumbbell,
-  Heart,
+  Building2,
+  Home,
+  Video,
+  Sparkles,
+  Waves,
 } from "lucide-react";
 
 const services = [
   {
-    icon: Activity,
-    title: "Physical Therapy",
+    icon: Building2,
+    title: "In Clinic",
     description:
-      "Comprehensive rehabilitation for injuries, surgeries, and chronic conditions using evidence-based techniques.",
+      "One-on-one hour-long sessions at our home base clinic in Palo Alto. Fully individualized treatment focusing on restoring function, reducing pain, and improving movement quality.",
   },
   {
-    icon: Zap,
-    title: "Sports Rehabilitation",
+    icon: Home,
+    title: "Home Visits",
     description:
-      "Specialized recovery programs designed for athletes at all levels to return to peak performance.",
+      "One-on-one hour-long sessions in the comfort of your own home. Perfect for those with mobility limitations or busy schedules.",
   },
   {
-    icon: Target,
-    title: "Performance Optimization",
+    icon: Video,
+    title: "Virtual Sessions",
     description:
-      "Fine-tune your movement patterns and biomechanics to achieve your highest athletic potential.",
+      "One-on-one hour-long sessions virtually. Convenient access to expert care from anywhere.",
   },
   {
-    icon: Shield,
-    title: "Injury Prevention",
+    icon: Sparkles,
+    title: "Concierge",
     description:
-      "Proactive screening and training programs to identify and address injury risks before they occur.",
+      "Premium personalized care tailored to your unique needs. Please email directly for more information about this exclusive service.",
   },
   {
-    icon: TrendingUp,
-    title: "Mobility & Movement Analysis",
+    icon: Waves,
+    title: "Aquatic Therapy",
     description:
-      "Advanced assessment of your movement quality using cutting-edge technology and expert analysis.",
-  },
-  {
-    icon: RotateCcw,
-    title: "Return-to-Sport Training",
-    description:
-      "Structured progression protocols to safely transition athletes back to competition.",
-  },
-  {
-    icon: Dumbbell,
-    title: "Strength & Conditioning",
-    description:
-      "Integrated strength programs that complement your rehab and enhance overall performance.",
-  },
-  {
-    icon: Heart,
-    title: "Recovery Programs",
-    description:
-      "Customized recovery protocols including manual therapy, dry needling, and regenerative techniques.",
+      "Specialized aquatic physical therapy at Burgess Pool combining advanced rehabilitation with the therapeutic properties of water. Thursdays 9-10 AM.",
   },
 ];
 
@@ -81,7 +60,7 @@ export function Services() {
         </div>
 
         {/* Services grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <div
               key={service.title}
