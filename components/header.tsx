@@ -2,10 +2,64 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import {
+  Menu,
+  X,
+  ChevronDown,
+  Activity,
+  Zap,
+  Target,
+  Shield,
+  TrendingUp,
+  RotateCcw,
+  Dumbbell,
+  Heart,
+} from "lucide-react";
+
+const services = [
+  {
+    icon: Activity,
+    title: "Physical Therapy",
+    description: "Comprehensive rehabilitation for injuries and chronic conditions.",
+  },
+  {
+    icon: Zap,
+    title: "Sports Rehabilitation",
+    description: "Specialized recovery programs for athletes at all levels.",
+  },
+  {
+    icon: Target,
+    title: "Performance Optimization",
+    description: "Fine-tune movement patterns for peak athletic potential.",
+  },
+  {
+    icon: Shield,
+    title: "Injury Prevention",
+    description: "Proactive screening to address injury risks early.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Mobility & Movement Analysis",
+    description: "Advanced assessment using cutting-edge technology.",
+  },
+  {
+    icon: RotateCcw,
+    title: "Return-to-Sport Training",
+    description: "Structured protocols to safely return to competition.",
+  },
+  {
+    icon: Dumbbell,
+    title: "Strength & Conditioning",
+    description: "Integrated programs to enhance overall performance.",
+  },
+  {
+    icon: Heart,
+    title: "Recovery Programs",
+    description: "Customized recovery including manual therapy and dry needling.",
+  },
+];
 
 const navLinks = [
-  { href: "#services", label: "Services" },
   { href: "#about", label: "About" },
   { href: "#why-choose", label: "Why Choose Us" },
   { href: "#testimonials", label: "Testimonials" },
@@ -15,6 +69,7 @@ const navLinks = [
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +98,44 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
+            {/* Services Dropdown */}
+            <div className="relative group">
+              <a
+                href="#services"
+                className="flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Services
+                <ChevronDown className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
+              </a>
+
+              {/* Dropdown Menu */}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="w-[600px] bg-background/95 backdrop-blur-xl border border-border rounded-2xl shadow-xl p-6">
+                  <div className="grid grid-cols-2 gap-3">
+                    {services.map((service) => (
+                      <a
+                        key={service.title}
+                        href="#services"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-secondary/80 transition-colors group/item"
+                      >
+                        <div className="flex-shrink-0 h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-primary-foreground transition-colors">
+                          <service.icon className="h-5 w-5" />
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground text-sm">
+                            {service.title}
+                          </p>
+                          <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
+                            {service.description}
+                          </p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -78,7 +171,37 @@ export function Header() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-background/95 backdrop-blur-lg border-b border-border">
-          <nav className="flex flex-col px-4 py-6 gap-4">
+          <nav className="flex flex-col px-4 py-6 gap-2">
+            {/* Mobile Services Accordion */}
+            <div>
+              <button
+                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                className="flex items-center justify-between w-full text-base font-medium text-foreground py-2"
+              >
+                Services
+                <ChevronDown
+                  className={`h-5 w-5 transition-transform duration-200 ${
+                    isMobileServicesOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isMobileServicesOpen && (
+                <div className="pl-4 mt-2 space-y-2 border-l-2 border-primary/20">
+                  {services.map((service) => (
+                    <a
+                      key={service.title}
+                      href="#services"
+                      className="flex items-center gap-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <service.icon className="h-4 w-4 text-primary" />
+                      {service.title}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {navLinks.map((link) => (
               <a
                 key={link.href}
