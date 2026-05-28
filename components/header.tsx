@@ -48,7 +48,8 @@ const services = [
 
 const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#why-choose", label: "Why Choose Us" },
+  { href: "#meet-juliet", label: "Meet Juliet" },
+  { href: "#facilities", label: "Facilities" },
   { href: "#testimonials", label: "Testimonials" },
   { href: "#faq", label: "FAQ" },
 ];

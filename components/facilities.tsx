@@ -75,16 +75,7 @@ export function Facilities() {
           {/* Large Card - Gym (spans 2 columns on lg) */}
           <div className="lg:col-span-2 lg:row-span-2 group relative overflow-hidden rounded-3xl">
             {/* Image Placeholder */}
-            <div className="aspect-[4/3] lg:aspect-auto lg:h-full w-full bg-gradient-to-br from-primary/20 via-primary/10 to-accent/20 relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <Dumbbell className="h-16 w-16 text-primary/40 mx-auto mb-4" />
-                  <span className="text-primary/40 text-sm font-medium">
-                    Gym Image
-                  </span>
-                </div>
-              </div>
-
+            <div className="aspect-[4/3] lg:aspect-auto lg:h-full w-full bg-gradient-to-br from-[#e8f5f0] via-[#d4eef5] to-[#e0e8f5] relative">
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
 
@@ -109,16 +100,7 @@ export function Facilities() {
 
           {/* Medium Card - Aquatic */}
           <div className="group relative overflow-hidden rounded-3xl">
-            <div className="aspect-[4/3] w-full bg-gradient-to-br from-accent/30 via-accent/20 to-primary/20 relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <Waves className="h-12 w-12 text-accent/50 mx-auto mb-3" />
-                  <span className="text-accent/50 text-sm font-medium">
-                    Aquatic Center
-                  </span>
-                </div>
-              </div>
-
+            <div className="aspect-[4/3] w-full bg-gradient-to-br from-[#e0f0f5] via-[#d8e8f2] to-[#e5eef8] relative">
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
 
@@ -140,16 +122,7 @@ export function Facilities() {
 
           {/* Medium Card - Turf */}
           <div className="group relative overflow-hidden rounded-3xl">
-            <div className="aspect-[4/3] w-full bg-gradient-to-br from-primary/15 via-accent/15 to-primary/25 relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <TreePine className="h-12 w-12 text-primary/40 mx-auto mb-3" />
-                  <span className="text-primary/40 text-sm font-medium">
-                    Turf Area
-                  </span>
-                </div>
-              </div>
-
+            <div className="aspect-[4/3] w-full bg-gradient-to-br from-[#e5f2ed] via-[#dceef3] to-[#e8f0f5] relative">
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
 
@@ -171,16 +144,7 @@ export function Facilities() {
 
           {/* Wide Card - Treatment Rooms (spans full width on mobile, 2 cols on md, 1 on lg) */}
           <div className="md:col-span-2 lg:col-span-1 group relative overflow-hidden rounded-3xl">
-            <div className="aspect-[16/9] md:aspect-[21/9] lg:aspect-[4/3] w-full bg-gradient-to-br from-primary/10 via-accent/10 to-primary/15 relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <Building2 className="h-12 w-12 text-primary/40 mx-auto mb-3" />
-                  <span className="text-primary/40 text-sm font-medium">
-                    Treatment Rooms
-                  </span>
-                </div>
-              </div>
-
+            <div className="aspect-[16/9] md:aspect-[21/9] lg:aspect-[4/3] w-full bg-gradient-to-br from-[#e2f3f0] via-[#daeef5] to-[#e5f0f2] relative">
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
 
