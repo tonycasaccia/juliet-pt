@@ -174,12 +174,12 @@ export function Facilities() {
             {amenities.map((amenity) => (
               <div
                 key={amenity}
-                className="flex items-center gap-3 text-muted-foreground"
+                className="flex items-start gap-3 text-muted-foreground"
               >
-                <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <div className="h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <Check className="h-3 w-3 text-primary" />
                 </div>
-                <span className="text-sm">{amenity}</span>
+                <span className="text-sm leading-tight">{amenity}</span>
               </div>
             ))}
           </div>

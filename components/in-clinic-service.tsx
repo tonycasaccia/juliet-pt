@@ -222,8 +222,8 @@ export function InClinicService() {
                       key={item}
                       className="text-sm text-muted-foreground flex items-start gap-2"
                     >
-                      <span className="text-primary mt-1.5">•</span>
-                      {item}
+                      <span className="text-primary leading-tight flex-shrink-0">•</span>
+                      <span className="leading-tight">{item}</span>
                     </li>
                   ))}
                 </ul>
