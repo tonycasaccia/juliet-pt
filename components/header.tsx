@@ -82,7 +82,7 @@ export function Header() {
             <img 
               src="/images/logo.png" 
               alt="Saint Germain Physical Therapy" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </a>
 
