@@ -1,13 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Award, Users, Star } from "lucide-react";
-
-const stats = [
-  { value: "15+", label: "Years Experience", icon: Award },
-  { value: "5000+", label: "Patients Treated", icon: Users },
-  { value: "98%", label: "Success Rate", icon: Star },
-];
+import { ArrowRight, Play, Star } from "lucide-react";
 
 export function Hero() {
   return (
@@ -43,9 +37,8 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Elite physical therapy and sports rehabilitation for Silicon Valley&apos;s 
-              high-performers. Personalized, evidence-based care that gets you back 
-              to peak performance.
+              Personalized, evidence-based physical therapy and sports rehabilitation 
+              helping you move well &amp; feel strong.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -64,23 +57,6 @@ export function Hero() {
                 <Play className="mr-2 h-5 w-5" />
                 Learn More
               </Button>
-            </div>
-
-            {/* Trust indicators */}
-            <div className="mt-16 grid grid-cols-3 gap-6 lg:gap-8">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center lg:text-left">
-                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-1">
-                    <stat.icon className="h-5 w-5 text-primary" />
-                    <span className="text-2xl sm:text-3xl font-bold text-foreground">
-                      {stat.value}
-                    </span>
-                  </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
             </div>
           </div>
 
