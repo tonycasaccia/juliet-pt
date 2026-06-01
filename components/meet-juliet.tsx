@@ -1,6 +1,8 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function MeetJuliet() {
   return (
@@ -43,22 +45,18 @@ export function MeetJuliet() {
               those who demand peak performance.
             </p>
 
-            <div className="flex flex-wrap items-center gap-4">
-              <a
-                href="https://juliet-pt.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300"
-              >
-                Learn more about Juliet
-                <ArrowRight className="h-4 w-4" />
-              </a>
-              <span className="text-muted-foreground/50">|</span>
+            <div className="flex flex-wrap items-center gap-6">
+              <Button asChild className="rounded-full">
+                <Link href="/about">
+                  Learn more about Juliet
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
               <a
                 href="https://juliet-pt.netlify.app/cv/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary font-medium transition-colors duration-300"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors duration-300"
               >
                 View Full CV
               </a>
