@@ -140,10 +140,13 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <Button
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6"
             >
-              Book an Appointment
+              <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer">
+                Book an Appointment
+              </a>
             </Button>
           </div>
 
@@ -203,10 +206,13 @@ export function Header() {
               </a>
             ))}
             <Button
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full mt-4"
             >
-              Book an Appointment
+              <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer">
+                Book an Appointment
+              </a>
             </Button>
           </nav>
         </div>

@@ -43,11 +43,14 @@ export function Hero() {
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
+                asChild
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-base font-medium shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
               >
-                Book an Appointment
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer">
+                  Book an Appointment
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
               </Button>
               <Button
                 size="lg"

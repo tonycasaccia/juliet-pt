@@ -46,9 +46,12 @@ export function Footer() {
               high-performers.
             </p>
             <Button
+              asChild
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full"
             >
-              Book an Appointment
+              <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer">
+                Book an Appointment
+              </a>
             </Button>
           </div>
 
