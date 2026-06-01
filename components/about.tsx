@@ -30,8 +30,8 @@ export function About() {
               </div>
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <img 
-                  src="/images/aquatic-therapy.jpg" 
-                  alt="Aquatic therapy session in pool" 
+                  src="/images/bike.jpg" 
+                  alt="Juliet at cycling event with bike" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -86,6 +86,15 @@ export function About() {
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>
+        </div>
+
+        {/* Aquatic Therapy Full Width Image */}
+        <div className="rounded-3xl overflow-hidden">
+          <img 
+            src="/images/aquatic-therapy.jpg" 
+            alt="Aquatic therapy session in pool" 
+            className="w-full h-64 lg:h-80 object-cover"
+          />
         </div>
       </div>
     </section>
