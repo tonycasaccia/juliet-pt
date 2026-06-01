@@ -43,15 +43,26 @@ export function MeetJuliet() {
               those who demand peak performance.
             </p>
 
-            <a
-              href="https://juliet-pt.netlify.app/cv/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300"
-            >
-              View Full CV
-              <ArrowRight className="h-4 w-4" />
-            </a>
+            <div className="flex flex-wrap items-center gap-4">
+              <a
+                href="https://juliet-pt.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300"
+              >
+                Learn more about Juliet
+                <ArrowRight className="h-4 w-4" />
+              </a>
+              <span className="text-muted-foreground/50">|</span>
+              <a
+                href="https://juliet-pt.netlify.app/cv/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary font-medium transition-colors duration-300"
+              >
+                View Full CV
+              </a>
+            </div>
           </div>
         </div>
       </div>
