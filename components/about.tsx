@@ -87,15 +87,6 @@ export function About() {
             </a>
           </div>
         </div>
-
-        {/* Aquatic Therapy Full Width Image */}
-        <div className="rounded-3xl overflow-hidden">
-          <img 
-            src="/images/aquatic-therapy.jpg" 
-            alt="Aquatic therapy session in pool" 
-            className="w-full h-64 lg:h-80 object-cover"
-          />
-        </div>
       </div>
     </section>
   );
