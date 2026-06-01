@@ -4,9 +4,7 @@ import { Services } from "@/components/services";
 import { About } from "@/components/about";
 import { MeetJuliet } from "@/components/meet-juliet";
 import { Facilities } from "@/components/facilities";
-import { Testimonials } from "@/components/testimonials";
-import { BookingCTA } from "@/components/booking-cta";
-import { FAQ } from "@/components/faq";
+// import { Testimonials } from "@/components/testimonials";
 import { Footer } from "@/components/footer";
 
 export default function Home() {
@@ -14,13 +12,11 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <MeetJuliet />
       <About />
       <Services />
-      <MeetJuliet />
       <Facilities />
-      <Testimonials />
-      <BookingCTA />
-      <FAQ />
+      {/* <Testimonials /> */}
       <Footer />
     </main>
   );
