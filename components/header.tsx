@@ -78,10 +78,12 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="text-xl font-semibold tracking-tight text-foreground">
-              Juliet St. Germain
-            </span>
+          <a href="#" className="flex items-center">
+            <img 
+              src="/images/logo.png" 
+              alt="Saint Germain Physical Therapy" 
+              className="h-10 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
