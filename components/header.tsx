@@ -42,7 +42,7 @@ const services = [
     icon: Waves,
     title: "Aquatic Therapy",
     description: "Specialized aquatic rehabilitation at Burgess Pool.",
-    href: "#services",
+    href: "/services/aquatic-therapy",
   },
 ];
 

@@ -23,6 +23,7 @@ const services = [
     title: "Aquatic Therapy",
     description:
       "Specialized aquatic physical therapy at Burgess Pool combining advanced rehabilitation with the therapeutic properties of water. Thursdays 9-10 AM.",
+    href: "/services/aquatic-therapy",
   },
   {
     icon: Home,
