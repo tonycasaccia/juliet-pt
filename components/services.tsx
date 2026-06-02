@@ -8,6 +8,8 @@ import {
   Sparkles,
   Waves,
   ArrowRight,
+  Activity,
+  Scan,
 } from "lucide-react";
 
 const services = [
@@ -43,6 +45,19 @@ const services = [
     descriptionHtml: true,
     description:
       'Premium personalized care tailored to your unique needs. Please <a href="mailto:saintgermainphysicaltherapy@gmail.com" class="text-primary hover:underline">email</a> or <a href="tel:5052498284" class="text-primary hover:underline">text</a> for more information about this exclusive service.',
+  },
+  {
+    icon: Activity,
+    title: "Performance & Training",
+    description:
+      "Expert assessment and treatment for athletes and active individuals. Includes run assessment, bike assessment, swim assessment, and gait assessment to optimize your performance.",
+  },
+  {
+    icon: Scan,
+    title: "Complete Mobility Screening",
+    descriptionHtml: true,
+    description:
+      'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport. <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Book now</a>.',
   },
 ];
 
