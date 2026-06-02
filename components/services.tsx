@@ -57,8 +57,7 @@ export function Services() {
             Comprehensive Care for Every Stage of Your Journey
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From injury rehabilitation to performance optimization, we offer 
-            a full spectrum of services tailored to your unique needs.
+            Comprehensive Care in Every Stage Meeting You Where You Are
           </p>
         </div>
 
