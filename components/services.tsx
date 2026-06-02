@@ -54,11 +54,8 @@ export function Services() {
             Our Services
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground mb-6 text-balance">
-            Comprehensive Care for Every Stage of Your Journey
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
             Comprehensive Care in Every Stage Meeting You Where You Are
-          </p>
+          </h2>
         </div>
 
         {/* Services grid */}
