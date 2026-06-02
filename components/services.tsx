@@ -19,10 +19,16 @@ const services = [
     href: "/services/in-clinic",
   },
   {
+    icon: Waves,
+    title: "Aquatic Therapy",
+    description:
+      "Specialized aquatic physical therapy at Burgess Pool combining advanced rehabilitation with the therapeutic properties of water. Thursdays 9-10 AM.",
+  },
+  {
     icon: Home,
     title: "Home Visits",
     description:
-      "One-on-one hour-long sessions in the comfort of your own home. Perfect for those with mobility limitations or busy schedules.",
+      "One-on-one hour-long sessions in the comfort of your own home. Perfect for those with busy schedules or mobility restrictions.",
   },
   {
     icon: Video,
@@ -33,14 +39,9 @@ const services = [
   {
     icon: Sparkles,
     title: "Concierge",
+    descriptionHtml: true,
     description:
-      "Premium personalized care tailored to your unique needs. Please email directly for more information about this exclusive service.",
-  },
-  {
-    icon: Waves,
-    title: "Aquatic Therapy",
-    description:
-      "Specialized aquatic physical therapy at Burgess Pool combining advanced rehabilitation with the therapeutic properties of water. Thursdays 9-10 AM.",
+      'Premium personalized care tailored to your unique needs. Please <a href="mailto:saintgermainphysicaltherapy@gmail.com" class="text-primary hover:underline">email</a> or <a href="tel:5052498284" class="text-primary hover:underline">text</a> for more information about this exclusive service.',
   },
 ];
 
@@ -80,9 +81,16 @@ export function Services() {
                 <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
+                {service.descriptionHtml ? (
+                  <p 
+                    className="text-sm text-muted-foreground leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: service.description }}
+                  />
+                ) : (
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </p>
+                )}
 
                 {/* Learn more indicator for linked services */}
                 {service.href && (
