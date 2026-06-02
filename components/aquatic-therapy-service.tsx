@@ -8,27 +8,29 @@ import {
   Clock,
   MapPin,
   Calendar,
-  Users,
+  Thermometer,
+  DollarSign,
+  Accessibility,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const benefits = [
-  "Reduced joint stress and impact during exercise",
-  "Increased range of motion and flexibility",
-  "Improved balance and coordination",
-  "Enhanced strength through water resistance",
-  "Accelerated recovery from injury or surgery",
-  "Pain relief through hydrostatic pressure",
+  "Reduces joint stress and pain",
+  "Improves strength and flexibility",
+  "Enhances balance and mobility",
+  "Improves cardiovascular function",
+  "Faster recovery",
+  "Suitable for all ages and fitness levels",
 ];
 
-const idealFor = [
-  "Post-surgical rehabilitation",
-  "Arthritis and joint conditions",
-  "Chronic pain management",
-  "Balance and fall prevention",
-  "Sports injury recovery",
-  "Neurological conditions",
-  "Seniors seeking low-impact exercise",
+const focusAreas = [
+  "Strength",
+  "Mobility and flexibility",
+  "Balance and stability",
+  "Endurance",
+  "Stationary drills",
+  "Ambulatory movement through pool",
+  "Shallow and deep water work",
 ];
 
 export function AquaticTherapyService() {
@@ -56,28 +58,13 @@ export function AquaticTherapyService() {
                 <Waves className="h-7 w-7" />
               </div>
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium text-foreground mb-6 text-balance">
-                Aquatic Physical Therapy
+                Aquatic Therapy
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                Specialized aquatic rehabilitation at Burgess Pool combining 
-                advanced physical therapy techniques with the therapeutic 
-                properties of water for accelerated healing and improved mobility.
+                Our specialized aquatic physical therapy program combines advanced 
+                rehabilitation techniques with water&apos;s therapeutic properties to 
+                accelerate your recovery and enhance wellness.
               </p>
-
-              <div className="flex flex-wrap gap-6 mb-8">
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Clock className="h-5 w-5 text-primary" />
-                  <span>Thursdays 9-10 AM</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  <span>Burgess Pool, Menlo Park</span>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Users className="h-5 w-5 text-primary" />
-                  <span>Small group sessions</span>
-                </div>
-              </div>
 
               <Button asChild size="lg" className="rounded-full">
                 <a 
@@ -86,7 +73,7 @@ export function AquaticTherapyService() {
                   rel="noopener noreferrer"
                 >
                   <Calendar className="mr-2 h-5 w-5" />
-                  Book an Appointment
+                  Schedule Your Assessment
                 </a>
               </Button>
             </div>
@@ -109,45 +96,34 @@ export function AquaticTherapyService() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div>
-              <h2 className="font-serif text-3xl sm:text-4xl font-medium text-foreground mb-6">
+              <h2 className="font-serif text-3xl sm:text-4xl font-medium text-foreground mb-8">
                 Benefits of Aquatic Therapy
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Water provides a unique therapeutic environment that allows for 
-                exercise and movement that may be difficult or painful on land. 
-                The buoyancy, resistance, and hydrostatic pressure of water 
-                create ideal conditions for rehabilitation.
-              </p>
 
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {benefits.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <div className="mt-1 h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Check className="h-3 w-3 text-primary" />
                     </div>
-                    <span className="text-muted-foreground">{item}</span>
+                    <span className="text-lg text-muted-foreground">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div>
-              <h2 className="font-serif text-3xl sm:text-4xl font-medium text-foreground mb-6">
-                Ideal For
+              <h2 className="font-serif text-3xl sm:text-4xl font-medium text-foreground mb-8">
+                Focus
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Aquatic therapy is particularly beneficial for patients who need 
-                a gentler approach to rehabilitation or those looking to 
-                supplement their land-based physical therapy program.
-              </p>
 
-              <ul className="space-y-3">
-                {idealFor.map((item) => (
+              <ul className="space-y-4">
+                {focusAreas.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <div className="mt-1 h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Check className="h-3 w-3 text-primary" />
                     </div>
-                    <span className="text-muted-foreground">{item}</span>
+                    <span className="text-lg text-muted-foreground">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -156,31 +132,61 @@ export function AquaticTherapyService() {
         </div>
       </section>
 
-      {/* Location Info */}
+      {/* Session Info */}
       <section className="py-16 lg:py-24 bg-muted/30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="font-serif text-3xl sm:text-4xl font-medium text-foreground mb-6">
-              Session Details
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Aquatic therapy sessions are held at Burgess Pool in Menlo Park 
-              every Thursday from 9-10 AM. Sessions are conducted in small groups 
-              to ensure personalized attention while fostering a supportive 
-              community environment.
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Expert-led group sessions and personalized one-on-one treatments (30 or 60 minutes). 
+              Whether you&apos;re recovering from surgery, managing chronic pain, or seeking improved 
+              function, our aquatic therapy program offers a proven path to better movement.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="px-6 py-4 rounded-xl bg-card border border-border">
-                <p className="text-sm text-muted-foreground">Location</p>
-                <p className="font-semibold text-foreground">Burgess Pool, Menlo Park</p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-3xl sm:text-4xl font-medium text-foreground mb-8 text-center">
+              Details
+            </h2>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="px-6 py-5 rounded-xl bg-card border border-border">
+                <div className="flex items-center gap-3 mb-2">
+                  <MapPin className="h-5 w-5 text-primary" />
+                  <p className="text-sm text-muted-foreground">Where to go</p>
+                </div>
+                <p className="font-semibold text-foreground">Burgess / Menlo Park Pool</p>
               </div>
-              <div className="px-6 py-4 rounded-xl bg-card border border-border">
-                <p className="text-sm text-muted-foreground">Schedule</p>
-                <p className="font-semibold text-foreground">Thursdays, 9-10 AM</p>
+
+              <div className="px-6 py-5 rounded-xl bg-card border border-border">
+                <div className="flex items-center gap-3 mb-2">
+                  <Clock className="h-5 w-5 text-primary" />
+                  <p className="text-sm text-muted-foreground">Schedule</p>
+                </div>
+                <p className="font-semibold text-foreground">Every Thursday 9:00-10:00 am</p>
               </div>
-              <div className="px-6 py-4 rounded-xl bg-card border border-border">
-                <p className="text-sm text-muted-foreground">Format</p>
-                <p className="font-semibold text-foreground">Small Group Sessions</p>
+
+              <div className="px-6 py-5 rounded-xl bg-card border border-border">
+                <div className="flex items-center gap-3 mb-2">
+                  <Thermometer className="h-5 w-5 text-primary" />
+                  <p className="text-sm text-muted-foreground">Pool temperature</p>
+                </div>
+                <p className="font-semibold text-foreground">87°</p>
+              </div>
+
+              <div className="px-6 py-5 rounded-xl bg-card border border-border">
+                <div className="flex items-center gap-3 mb-2">
+                  <DollarSign className="h-5 w-5 text-primary" />
+                  <p className="text-sm text-muted-foreground">Drop in fee</p>
+                </div>
+                <p className="font-semibold text-foreground">$25 / class</p>
+              </div>
+
+              <div className="px-6 py-5 rounded-xl bg-card border border-border sm:col-span-2 lg:col-span-2">
+                <div className="flex items-center gap-3 mb-2">
+                  <Accessibility className="h-5 w-5 text-primary" />
+                  <p className="text-sm text-muted-foreground">Accessibility</p>
+                </div>
+                <p className="font-semibold text-foreground">Handicap accessible - handrails and hydro-assist entry available</p>
               </div>
             </div>
           </div>
@@ -191,12 +197,9 @@ export function AquaticTherapyService() {
       <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="font-serif text-3xl sm:text-4xl font-medium text-foreground mb-6">
-              Ready to Get Started?
-            </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Experience the healing benefits of aquatic therapy. Book your 
-              session today and take the first step toward better movement.
+              Schedule your assessment today and discover how aquatic therapy 
+              can transform your rehabilitation journey.
             </p>
             <Button asChild size="lg" className="rounded-full">
               <a 
