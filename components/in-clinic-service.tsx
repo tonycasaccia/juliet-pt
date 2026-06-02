@@ -16,7 +16,7 @@ const treatmentIncludes = [
   "Neuromuscular re-education",
   "Strength and conditioning",
   "Sport-specific rehabilitation",
-  "Movement retraining and coordination work",
+  "Movement retraining and coordination",
 ];
 
 const conditions = [
