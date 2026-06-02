@@ -7,10 +7,11 @@ import {
   Waves,
   Heart,
   BookOpen,
-  Users,
   ArrowLeft,
   ExternalLink,
+  Bike,
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const credentials = [
   {
@@ -35,7 +36,7 @@ const credentials = [
     title: "Research & Publications",
     items: [
       "Published research on resistance training and hypertrophy",
-      "Physiological effects of exercise studies",
+      "Physiological effects of mask wearing during exercise",
       "Actively involved in clinical research and presentation",
     ],
   },
@@ -75,19 +76,12 @@ export function AboutJuliet() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             {/* Image */}
             <div className="relative order-2 lg:order-1">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 via-accent/10 to-primary/5 border border-border/50 shadow-xl sticky top-32">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="h-32 w-32 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                      <span className="font-serif text-4xl font-medium text-primary">
-                        JSG
-                      </span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      Photo placeholder
-                    </p>
-                  </div>
-                </div>
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden border border-border/50 shadow-xl sticky top-32">
+                <img
+                  src="/images/juliet.jpg"
+                  alt="Juliet St. Germain"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10" />
             </div>
@@ -100,24 +94,29 @@ export function AboutJuliet() {
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-medium text-foreground mb-8 text-balance">
                 Juliet St. Germain
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                Doctor of Physical Therapy, Certified Functional Manual
-                Therapist
+              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+                Doctor of Physical Therapy, Certified Functional Manual Therapist
               </p>
 
-              <div className="prose prose-lg text-muted-foreground">
-                <p className="leading-relaxed mb-6">
-                  Juliet was born and raised in Albuquerque, New Mexico. She
-                  earned her B.S. in Physiology & Exercise Science from the
-                  University of New Mexico and her Doctorate in Physical Therapy
-                  from Northern Arizona University, graduating with distinction.
+              <div className="prose prose-lg text-muted-foreground space-y-6">
+                <p className="leading-relaxed">
+                  Juliet was born and raised in the beautiful high desert of Albuquerque, New Mexico. She earned her B.S. in Physiology & Exercise Science from the University of New Mexico and her Doctorate in Physical Therapy from Northern Arizona University, graduating with distinction.
                 </p>
                 <p className="leading-relaxed">
-                  She is published in research on resistance training,
-                  hypertrophy, and the physiological effects of exercise, and
-                  plans to remain actively involved in clinical research and
-                  presentation.
+                  She is published in research on resistance training, hypertrophy, and the physiological effects of mask wearing during exercise, and plans to remain actively involved in clinical research & presentation pertaining to such.
                 </p>
+              </div>
+
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <a
+                  href="https://juliet-pt.netlify.app/cv/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+                >
+                  View Full CV
+                  <ExternalLink className="h-4 w-4" />
+                </a>
               </div>
             </div>
           </div>
@@ -132,13 +131,11 @@ export function AboutJuliet() {
               Clinical Philosophy
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              {"Juliet's treatment philosophy follows an "}
+              {"Juliet's treatment philosophy follows the "}
               <span className="font-semibold text-foreground">
                 integrative whole-systems approach
               </span>
-              {
-                " influenced by the Institute of Physical Art and the Barral Institute."
-              }
+              {" of the Institute of Physical Art and the Barral Institute."}
             </p>
           </div>
 
@@ -148,10 +145,10 @@ export function AboutJuliet() {
                 Certified Functional Manual Therapist
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                After completing the rigorous process to become a CFMT through
-                the Institute of Physical Art, Juliet works with both
-                non-athletes and athletes ranging from recreational to Olympic
-                level.
+                After jumping through the rigorous process to become a CFMT, Juliet works with non-athletes and athletes from recreational to professional and Olympic levels across multiple sports disciplines.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Her expertise allows athletes & recreational / &quot;life&quot; athletes get back to what they love & feel good doing so.
               </p>
               <a
                 href="https://instituteofphysicalart.com/"
@@ -237,12 +234,10 @@ export function AboutJuliet() {
                 </h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Juliet is the director and developer of the Aquatic Wellness and
-                Therapy program at Menlo Swim and Sport.
+                Juliet is the director and developer of the <span className="font-semibold text-foreground">Aquatic Wellness and Therapy program</span> at Menlo Swim and Sport.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                She values connection within community and expanding access to
-                care through group-based and one-on-one aquatic rehabilitation.
+                She finds immense value in connection within your community as well as finding alternatives for access to care. Here, she works with a variety of fitness levels and abilities in group settings or one-on-one.
               </p>
             </div>
 
@@ -264,16 +259,14 @@ export function AboutJuliet() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
               <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Users className="h-6 w-6 text-primary" />
+                <Bike className="h-6 w-6 text-primary" />
               </div>
               <h2 className="font-serif text-3xl sm:text-4xl font-medium text-foreground">
                 Outside the Clinic
               </h2>
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Outside of practice, Juliet enjoys trail and road cycling,
-              running, and swimming — and embraces being a beginner in new
-              experiences, from wine tasting to Flamenco dancing.
+              Outside of practice, Juliet enjoys trail and road cycling, running, swimming — and embraces being a beginner at new things from wine tasting to Flamenco dancing!
             </p>
           </div>
         </div>
@@ -287,15 +280,17 @@ export function AboutJuliet() {
               Ready to Work Together?
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Schedule your initial consultation and start your journey to
-              better movement.
+              Schedule your initial consultation and start your journey to better movement.
             </p>
-            <a
-              href="#booking"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-primary-foreground bg-primary rounded-full hover:bg-primary/90 transition-colors shadow-lg shadow-primary/25"
-            >
-              Book an Appointment
-            </a>
+            <Button asChild size="lg" className="rounded-full px-8">
+              <a
+                href="https://saintgermainphysicaltherapy.janeapp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book an Appointment
+              </a>
+            </Button>
           </div>
         </div>
       </section>

@@ -8,6 +8,8 @@ import {
   Sparkles,
   Waves,
   ArrowRight,
+  Activity,
+  Scan,
 } from "lucide-react";
 
 const services = [
@@ -19,10 +21,17 @@ const services = [
     href: "/services/in-clinic",
   },
   {
+    icon: Waves,
+    title: "Aquatic Therapy",
+    description:
+      "Specialized aquatic physical therapy at Burgess Pool combining advanced rehabilitation with the therapeutic properties of water. Thursdays 9-10 AM.",
+    href: "/services/aquatic-therapy",
+  },
+  {
     icon: Home,
     title: "Home Visits",
     description:
-      "One-on-one hour-long sessions in the comfort of your own home. Perfect for those with mobility limitations or busy schedules.",
+      "One-on-one hour-long sessions in the comfort of your own home. Perfect for those with busy schedules or mobility restrictions.",
   },
   {
     icon: Video,
@@ -33,14 +42,22 @@ const services = [
   {
     icon: Sparkles,
     title: "Concierge",
+    descriptionHtml: true,
     description:
-      "Premium personalized care tailored to your unique needs. Please email directly for more information about this exclusive service.",
+      'Premium personalized care tailored to your unique needs. Please <a href="mailto:saintgermainphysicaltherapy@gmail.com" class="text-primary hover:underline">email</a> or <a href="tel:5052498284" class="text-primary hover:underline">text</a> for more information about this exclusive service.',
   },
   {
-    icon: Waves,
-    title: "Aquatic Therapy",
+    icon: Activity,
+    title: "Performance & Training",
     description:
-      "Specialized aquatic physical therapy at Burgess Pool combining advanced rehabilitation with the therapeutic properties of water. Thursdays 9-10 AM.",
+      "Expert assessment and treatment for athletes and active individuals. Includes run assessment, bike assessment, swim assessment, and gait assessment to optimize your performance.",
+  },
+  {
+    icon: Scan,
+    title: "Complete Mobility Screening",
+    descriptionHtml: true,
+    description:
+      'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport. <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Book now</a>.',
   },
 ];
 
@@ -54,12 +71,8 @@ export function Services() {
             Our Services
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground mb-6 text-balance">
-            Comprehensive Care for Every Stage of Your Journey
+            Comprehensive Care in Every Stage Meeting You Where You Are
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            From injury rehabilitation to performance optimization, we offer 
-            a full spectrum of services tailored to your unique needs.
-          </p>
         </div>
 
         {/* Services grid */}
@@ -84,9 +97,16 @@ export function Services() {
                 <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
+                {service.descriptionHtml ? (
+                  <p 
+                    className="text-sm text-muted-foreground leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: service.description }}
+                  />
+                ) : (
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </p>
+                )}
 
                 {/* Learn more indicator for linked services */}
                 {service.href && (

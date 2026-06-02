@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function MeetJuliet() {
   return (
@@ -10,19 +11,12 @@ export function MeetJuliet() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 via-accent/10 to-primary/5 border border-border/50 shadow-lg">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="h-24 w-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <span className="font-serif text-3xl font-medium text-primary">
-                      JSG
-                    </span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Photo placeholder
-                  </p>
-                </div>
-              </div>
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-border/50 shadow-lg">
+              <img 
+                src="/images/juliet.jpg" 
+                alt="Juliet St. Germain at a swimming pool" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -z-10 -bottom-4 -right-4 w-full h-full rounded-3xl bg-gradient-to-br from-primary/10 to-accent/10" />
           </div>
@@ -51,13 +45,22 @@ export function MeetJuliet() {
               those who demand peak performance.
             </p>
 
-            <Link
-              href="/about"
-              className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all duration-300"
-            >
-              Learn more about Juliet
-              <ArrowRight className="h-4 w-4" />
-            </Link>
+            <div className="flex flex-wrap items-center gap-6">
+              <Button asChild className="rounded-full">
+                <Link href="/about">
+                  Learn more about Juliet
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <a
+                href="https://juliet-pt.netlify.app/cv/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors duration-300"
+              >
+                View Full CV
+              </a>
+            </div>
           </div>
         </div>
       </div>

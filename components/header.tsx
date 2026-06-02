@@ -21,6 +21,12 @@ const services = [
     href: "/services/in-clinic",
   },
   {
+    icon: Waves,
+    title: "Aquatic Therapy",
+    description: "Specialized aquatic rehabilitation at Burgess Pool.",
+    href: "/services/aquatic-therapy",
+  },
+  {
     icon: Home,
     title: "Home Visits",
     description: "One-on-one sessions in the comfort of your own home.",
@@ -36,12 +42,6 @@ const services = [
     icon: Sparkles,
     title: "Concierge",
     description: "Personalized premium care. Email for details.",
-    href: "#services",
-  },
-  {
-    icon: Waves,
-    title: "Aquatic Therapy",
-    description: "Specialized aquatic rehabilitation at Burgess Pool.",
     href: "#services",
   },
 ];
@@ -78,9 +78,9 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="#" className="flex items-center py-3">
             <span className="text-xl font-semibold tracking-tight text-foreground">
-              Juliet St. Germain
+              Saint Germain Physical Therapy
             </span>
           </a>
 
@@ -138,10 +138,13 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <Button
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6"
             >
-              Book an Appointment
+              <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer">
+                Book an Appointment
+              </a>
             </Button>
           </div>
 
@@ -201,10 +204,13 @@ export function Header() {
               </a>
             ))}
             <Button
+              asChild
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full mt-4"
             >
-              Book an Appointment
+              <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer">
+                Book an Appointment
+              </a>
             </Button>
           </nav>
         </div>

@@ -16,7 +16,7 @@ const treatmentIncludes = [
   "Neuromuscular re-education",
   "Strength and conditioning",
   "Sport-specific rehabilitation",
-  "Movement retraining and coordination work",
+  "Movement retraining and coordination",
 ];
 
 const conditions = [
@@ -172,9 +172,9 @@ export function InClinicService() {
               What to Expect
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Sessions are fully individualized and focus on restoring function,
-              reducing pain, and improving movement quality. Each session is
-              tailored to your specific needs and goals.
+              Sessions are one-on-one, hour long undivided &amp; individualized care 
+              utilizing up to date and state of practice treatment techniques with 
+              tailored exercise prescription and programming.
             </p>
 
             <h3 className="text-lg font-semibold text-foreground mb-4">
