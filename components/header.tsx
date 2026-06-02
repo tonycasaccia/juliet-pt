@@ -21,6 +21,12 @@ const services = [
     href: "/services/in-clinic",
   },
   {
+    icon: Waves,
+    title: "Aquatic Therapy",
+    description: "Specialized aquatic rehabilitation at Burgess Pool.",
+    href: "/services/aquatic-therapy",
+  },
+  {
     icon: Home,
     title: "Home Visits",
     description: "One-on-one sessions in the comfort of your own home.",
@@ -37,12 +43,6 @@ const services = [
     title: "Concierge",
     description: "Personalized premium care. Email for details.",
     href: "#services",
-  },
-  {
-    icon: Waves,
-    title: "Aquatic Therapy",
-    description: "Specialized aquatic rehabilitation at Burgess Pool.",
-    href: "/services/aquatic-therapy",
   },
 ];
 
