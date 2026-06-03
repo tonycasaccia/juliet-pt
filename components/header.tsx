@@ -161,7 +161,7 @@ export function Header() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-background/95 backdrop-blur-lg border-b border-border">
+        <div className="lg:hidden bg-background/95 backdrop-blur-lg border-b border-border max-h-[calc(100vh-5rem)] overflow-y-auto">
           <nav className="flex flex-col px-4 py-6 gap-2">
             {/* Mobile Services Accordion */}
             <div>
