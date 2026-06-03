@@ -31,8 +31,8 @@ export function Hero() {
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-foreground leading-tight text-balance">
-              Premier Physical Therapy for the 
-              <span className="text-primary"> Bay Area</span>
+              Helping the Bay Area 
+              <span className="text-primary">Move Better</span>
                
             </h1>
 
