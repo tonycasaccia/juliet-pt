@@ -50,8 +50,8 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#meet-juliet", label: "Meet Juliet" },
   { href: "#facilities", label: "Facilities" },
-  { href: "#testimonials", label: "Testimonials" },
-  { href: "#faq", label: "FAQ" },
+  // { href: "#testimonials", label: "Testimonials" },
+  // { href: "#faq", label: "FAQ" },
 ];
 
 export function Header() {

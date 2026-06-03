@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play, Star } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 
 export function Hero() {
   return (
@@ -31,9 +31,9 @@ export function Hero() {
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-foreground leading-tight text-balance">
-              Move Better.{" "}
-              <span className="text-primary">Perform Stronger.</span>{" "}
-              Recover Faster.
+              Helping the Bay Area
+              <span className="text-primary"> Move Better</span>
+               
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -52,20 +52,17 @@ export function Hero() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full px-8 py-6 text-base font-medium border-2 hover:bg-secondary"
-              >
-                <Play className="mr-2 h-5 w-5" />
-                Learn More
-              </Button>
             </div>
           </div>
 
-          {/* Image/Video placeholder */}
+          {/* Hero Image */}
           <div className="relative lg:h-[600px]">
-            <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 via-accent/20 to-primary/10 border border-border/50 shadow-2xl">
+            <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden border border-border/50 shadow-2xl">
+              <img 
+                src="/images/hero-runner.jpg" 
+                alt="Runner in motion" 
+                className="w-full h-full object-cover"
+              />
               {/* Glassmorphism card overlay */}
               <div className="absolute bottom-6 left-6 right-6 bg-background/80 backdrop-blur-xl rounded-2xl p-6 border border-border/50">
                 <div className="flex items-center gap-4">
@@ -79,16 +76,6 @@ export function Hero() {
                     <p className="text-sm text-muted-foreground">
                       Collegiate, professional &amp; Olympic level
                     </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Abstract visual */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative">
-                  <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-primary/30 to-accent/30 blur-2xl animate-pulse" />
-                  <div className="relative h-32 w-32 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                    <Play className="h-12 w-12 text-primary-foreground ml-1" />
                   </div>
                 </div>
               </div>
