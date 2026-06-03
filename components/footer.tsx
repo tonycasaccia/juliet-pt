@@ -40,10 +40,10 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-background/10">
           {/* Brand column */}
           <div className="lg:col-span-1">
-            <h3 className="text-xl font-semibold mb-4">Juliet St. Germain</h3>
+            <h3 className="text-xl font-semibold mb-4">Saint Germain Physical Therapy</h3>
             <p className="text-background/60 text-sm leading-relaxed mb-6">
-              Elite physical therapy and sports rehabilitation for Silicon Valley&apos;s 
-              high-performers.
+              Personalized, evidence-based physical therapy and sports rehabilitation 
+              helping you move well and feel strong.
             </p>
             <Button
               asChild
@@ -97,33 +97,32 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                 <span className="text-background/60 text-sm">
-                  123 Innovation Way<br />
-                  Palo Alto, CA 94301
+                  3921 Fabian Way<br />
+                  Palo Alto, CA 94303
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
                 <a
-                  href="tel:+16505550123"
+                  href="tel:5052498284"
                   className="text-background/60 hover:text-background text-sm transition-colors"
                 >
-                  (650) 555-0123
+                  505.249.8284
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
                 <a
-                  href="mailto:info@julietstgermain.com"
+                  href="mailto:saintgermainphysicaltherapy@gmail.com"
                   className="text-background/60 hover:text-background text-sm transition-colors"
                 >
-                  info@julietstgermain.com
+                  saintgermainphysicaltherapy@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                 <span className="text-background/60 text-sm">
-                  Mon - Fri: 7am - 7pm<br />
-                  Sat: 8am - 2pm
+                  Mon - Fri: 8am - 6pm
                 </span>
               </li>
             </ul>
@@ -133,7 +132,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/40 text-sm">
-            © {new Date().getFullYear()} Juliet St. Germain, DPT. All rights reserved.
+            © {new Date().getFullYear()} Saint Germain Physical Therapy. All rights reserved.
           </p>
 
           {/* Social links */}

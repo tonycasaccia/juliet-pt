@@ -22,21 +22,21 @@ const facilities = [
     id: "gym",
     title: "State-of-the-Art Gym",
     description:
-      "Fully equipped rehabilitation gym with specialized equipment for strength training, mobility work, and functional movement patterns.",
+      "Fully equipped indoor and outdoor rehabilitation gym with specialized equipment for strength training, mobility work, and functional movement patterns.",
     icon: Dumbbell,
     size: "large",
   },
   {
-    id: "aquatic",
-    title: "Aquatic Therapy Center",
+    id: "pool",
+    title: "Outdoor Pool",
     description:
-      "Therapeutic pool at Burgess Pool for low-impact rehabilitation and aquatic exercise programs.",
+      "Performance pool for low-impact rehabilitation and swim assessment.",
     icon: Waves,
     size: "medium",
   },
   {
     id: "turf",
-    title: "Indoor Turf Area",
+    title: "Outdoor Turf",
     description:
       "Sport-specific training surface for agility drills, return-to-sport protocols, and dynamic movement training.",
     icon: TreePine,
@@ -44,9 +44,9 @@ const facilities = [
   },
   {
     id: "clinic",
-    title: "Private Treatment Rooms",
+    title: "Private Treatment Room",
     description:
-      "Comfortable, private spaces for one-on-one manual therapy, dry needling, and personalized care.",
+      "Comfortable, private space for one-on-one manual therapy and personalized care.",
     icon: Building2,
     size: "small",
   },
@@ -59,10 +59,10 @@ export function Facilities() {
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-sm font-medium text-primary tracking-wider uppercase mb-4">
-            Our Facilities
+            Where We Work
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground mb-6 text-balance">
-            World-Class Amenities
+            Our Facilities
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Train and recover in premium facilities designed to support every
@@ -90,7 +90,7 @@ export function Facilities() {
                   </h3>
                 </div>
                 <p className="text-primary-foreground/80 text-sm lg:text-base max-w-xl">
-                  Fully equipped rehabilitation gym with specialized equipment
+                  Fully equipped indoor and outdoor rehabilitation gym with specialized equipment
                   for strength training, mobility work, and functional movement
                   patterns.
                 </p>
@@ -109,12 +109,12 @@ export function Facilities() {
                 <div className="flex items-center gap-3 mb-2">
                   <Waves className="h-5 w-5 text-primary-foreground" />
                   <h3 className="text-lg font-semibold text-primary-foreground">
-                    Aquatic Therapy
+                    Outdoor Pool
                   </h3>
                 </div>
                 <p className="text-primary-foreground/80 text-sm">
-                  Therapeutic pool for low-impact rehabilitation and aquatic
-                  programs.
+                  Performance pool for low-impact rehabilitation and swim
+                  assessment.
                 </p>
               </div>
             </div>
@@ -131,7 +131,7 @@ export function Facilities() {
                 <div className="flex items-center gap-3 mb-2">
                   <TreePine className="h-5 w-5 text-primary-foreground" />
                   <h3 className="text-lg font-semibold text-primary-foreground">
-                    Indoor Turf
+                    Outdoor Turf
                   </h3>
                 </div>
                 <p className="text-primary-foreground/80 text-sm">
@@ -153,11 +153,11 @@ export function Facilities() {
                 <div className="flex items-center gap-3 mb-2">
                   <Building2 className="h-5 w-5 text-primary-foreground" />
                   <h3 className="text-lg font-semibold text-primary-foreground">
-                    Private Treatment Rooms
+                    Private Treatment Room
                   </h3>
                 </div>
                 <p className="text-primary-foreground/80 text-sm">
-                  Comfortable, private spaces for one-on-one manual therapy and
+                  Comfortable, private space for one-on-one manual therapy and
                   personalized care.
                 </p>
               </div>
