@@ -165,7 +165,7 @@ export function Facilities() {
           </div>
         </div>
 
-        {/* Amenities List */}
+        {/* 
         <div className="mt-16 bg-background rounded-3xl p-8 lg:p-12 border border-border">
           <h3 className="font-serif text-2xl font-medium text-foreground mb-8 text-center">
             Included Amenities
@@ -183,7 +183,7 @@ export function Facilities() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Feature List */}
         <div className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
