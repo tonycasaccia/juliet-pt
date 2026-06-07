@@ -2,175 +2,139 @@
 
 import { Dumbbell, Waves, TreePine, Building2 } from "lucide-react";
 
-const facilities = [
-  {
-    id: "gym",
-    title: "State-of-the-Art Gym",
-    description:
-      "Fully equipped indoor and outdoor rehabilitation gym with specialized equipment for strength training, mobility work, and functional movement patterns.",
-    icon: Dumbbell,
-    size: "large",
-  },
-  {
-    id: "pool",
-    title: "Outdoor Pool",
-    description:
-      "Performance pool for low-impact rehabilitation and swim assessment.",
-    icon: Waves,
-    size: "medium",
-  },
-  {
-    id: "turf",
-    title: "Outdoor Turf",
-    description:
-      "Sport-specific training surface for agility drills, return-to-sport protocols, and dynamic movement training.",
-    icon: TreePine,
-    size: "medium",
-  },
-  {
-    id: "clinic",
-    title: "Private Treatment Room",
-    description:
-      "Comfortable, private space for one-on-one manual therapy and personalized care.",
-    icon: Building2,
-    size: "small",
-  },
-];
-
 export function Facilities() {
   return (
     <section id="facilities" className="py-24 lg:py-32 bg-secondary/30">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+
+        {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <p className="text-sm font-medium text-primary tracking-wider uppercase mb-4">
             Where We Work
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground mb-6 text-balance">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground mb-6">
             Our Facilities
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Train and recover in premium facilities designed to support every
-            stage of your rehabilitation and performance journey.
+            Train and recover in premium facilities designed to support every stage of your rehabilitation and performance journey.
           </p>
         </div>
 
-        {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-          {/* Large Card - Gym (spans 2 columns on lg) */}
-          <div className="lg:col-span-2 lg:row-span-2 group relative overflow-hidden rounded-3xl">
-            <div className="aspect-[4/3] lg:aspect-auto lg:h-full w-full relative">
+        {/* 2x2 Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+          {/* Gym */}
+          <div className="space-y-4">
+            <div className="rounded-3xl overflow-hidden">
               <img
                 src="/images/amenity-gym.jpg"
-                alt="Outdoor rehabilitation gym with training equipment under a tent"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="State-of-the-Art Gym"
+                className="h-[320px] w-full object-cover rounded-3xl"
               />
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/30 to-transparent" />
+            </div>
 
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="h-10 w-10 rounded-full bg-primary/30 backdrop-blur-sm flex items-center justify-center">
-                    <Dumbbell className="h-5 w-5 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl lg:text-2xl font-semibold text-primary-foreground">
-                    State-of-the-Art Gym
-                  </h3>
+            <div className="bg-background/80 backdrop-blur-md rounded-2xl p-6 border border-border/50">
+              <div className="flex items-center gap-4">
+                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Dumbbell className="h-6 w-6 text-primary" />
                 </div>
-                <p className="text-primary-foreground/85 text-sm lg:text-base max-w-xl">
-                  Fully equipped indoor and outdoor rehabilitation gym with specialized equipment
-                  for strength training, mobility work, and functional movement
-                  patterns.
-                </p>
+                <div>
+                  <p className="font-semibold text-foreground">
+                    State-of-the-Art Gym
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Strength training, mobility work, and functional movement patterns in a fully equipped rehab environment.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Medium Card - Aquatic */}
-          <div className="group relative overflow-hidden rounded-3xl">
-            <div className="aspect-[4/3] w-full relative">
+          {/* Pool */}
+          <div className="space-y-4">
+            <div className="rounded-3xl overflow-hidden">
               <img
                 src="/images/amenity-pool-opt.jpg"
-                alt="Outdoor performance pool"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="Outdoor Pool"
+                className="h-[320px] w-full object-cover rounded-3xl"
               />
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/30 to-transparent" />
+            </div>
 
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="flex items-center gap-3 mb-2">
-                  <Waves className="h-5 w-5 text-primary-foreground" />
-                  <h3 className="text-lg font-semibold text-primary-foreground">
-                    Outdoor Pool
-                  </h3>
+            <div className="bg-background/80 backdrop-blur-md rounded-2xl p-6 border border-border/50">
+              <div className="flex items-center gap-4">
+                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Waves className="h-6 w-6 text-primary" />
                 </div>
-                <p className="text-primary-foreground/85 text-sm">
-                  Performance pool for low-impact rehabilitation and swim
-                  assessment.
-                </p>
+                <div>
+                  <p className="font-semibold text-foreground">
+                    Outdoor Pool
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Low-impact rehabilitation and swim performance assessment.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Medium Card - Turf */}
-          <div className="group relative overflow-hidden rounded-3xl">
-            <div className="aspect-[4/3] w-full relative">
+          {/* Turf */}
+          <div className="space-y-4">
+            <div className="rounded-3xl overflow-hidden">
               <img
                 src="/images/amenity-turf.jpg"
-                alt="Outdoor turf training area"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="Outdoor Turf"
+                className="h-[320px] w-full object-cover rounded-3xl"
               />
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/30 to-transparent" />
+            </div>
 
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="flex items-center gap-3 mb-2">
-                  <TreePine className="h-5 w-5 text-primary-foreground" />
-                  <h3 className="text-lg font-semibold text-primary-foreground">
-                    Outdoor Turf
-                  </h3>
+            <div className="bg-background/80 backdrop-blur-md rounded-2xl p-6 border border-border/50">
+              <div className="flex items-center gap-4">
+                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <TreePine className="h-6 w-6 text-primary" />
                 </div>
-                <p className="text-primary-foreground/85 text-sm">
-                  Sport-specific training surface for agility and dynamic
-                  movement.
-                </p>
+                <div>
+                  <p className="font-semibold text-foreground">
+                    Outdoor Turf
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Agility training, return-to-sport prep, and dynamic movement work.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Wide Card - Treatment Rooms (spans full width on mobile, 2 cols on md, 1 on lg) */}
-          <div className="md:col-span-2 lg:col-span-1 group relative overflow-hidden rounded-3xl">
-            <div className="aspect-[16/9] md:aspect-[21/9] lg:aspect-[4/3] w-full relative">
+          {/* Treatment Room */}
+          <div className="space-y-4">
+            <div className="rounded-3xl overflow-hidden">
               <img
                 src="/images/amenity-recovery.jpg"
-                alt="Private treatment and recovery room"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                alt="Private Treatment Room"
+                className="h-[320px] w-full object-cover rounded-3xl"
               />
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/30 to-transparent" />
+            </div>
 
-              {/* Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <div className="flex items-center gap-3 mb-2">
-                  <Building2 className="h-5 w-5 text-primary-foreground" />
-                  <h3 className="text-lg font-semibold text-primary-foreground">
-                    Private Treatment Room
-                  </h3>
+            <div className="bg-background/80 backdrop-blur-md rounded-2xl p-6 border border-border/50">
+              <div className="flex items-center gap-4">
+                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Building2 className="h-6 w-6 text-primary" />
                 </div>
-                <p className="text-primary-foreground/85 text-sm">
-                  Comfortable, private space for one-on-one manual therapy and
-                  personalized care.
-                </p>
+                <div>
+                  <p className="font-semibold text-foreground">
+                    Private Treatment Room
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    One-on-one manual therapy and personalized rehabilitation care.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
-        {/* Bottom Feature List */}
-        <div className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
+        {/* Bottom feature row */}
+        <div className="mt-14 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-muted-foreground">
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             Palo Alto Location
@@ -188,6 +152,7 @@ export function Facilities() {
             Modern Equipment
           </span>
         </div>
+
       </div>
     </section>
   );
