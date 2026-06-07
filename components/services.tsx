@@ -27,6 +27,13 @@ const services = [
       "Specialized aquatic physical therapy at Burgess Pool combining advanced rehabilitation with the therapeutic properties of water. Thursdays 9-10 AM.",
     href: "/services/aquatic-therapy",
   },
+   {
+    icon: Scan,
+    title: "Complete Mobility Screening",
+    descriptionHtml: true,
+    description:
+      'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport. <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Book now</a>.',
+  },
   {
     icon: Home,
     title: "Home Visits",
@@ -52,13 +59,7 @@ const services = [
     description:
       "Expert assessment and treatment for athletes and active individuals. Includes run assessment, bike assessment, swim assessment, and gait assessment to optimize your performance.",
   },
-  {
-    icon: Scan,
-    title: "Complete Mobility Screening",
-    descriptionHtml: true,
-    description:
-      'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport. <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Book now</a>.',
-  },
+ 
 ];
 
 export function Services() {

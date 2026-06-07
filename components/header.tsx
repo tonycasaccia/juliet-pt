@@ -11,6 +11,7 @@ import {
   Video,
   Sparkles,
   Waves,
+  Scan,
 } from "lucide-react";
 
 const services = [
@@ -25,6 +26,12 @@ const services = [
     title: "Aquatic Therapy",
     description: "Specialized aquatic rehabilitation at Burgess Pool.",
     href: "/services/aquatic-therapy",
+  },
+  {
+    icon: Scan,
+    title: "Complete Mobility Screening",
+    description: "Mobility assessment for longevity, function, and performance.",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1"
   },
   {
     icon: Home,
