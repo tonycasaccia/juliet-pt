@@ -35,9 +35,9 @@ export function Facilities() {
 
             <div className="bg-background/80 backdrop-blur-md rounded-2xl p-6 border border-border/50">
               <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <Dumbbell className="h-6 w-6 text-primary" />
-                </div>
+                <div className="h-12 w-12 rounded-full bg-primary/10 grid place-items-center shrink-0">
+  <Dumbbell className="h-6 w-6 text-primary" />
+</div>
                 <div>
                   <p className="font-semibold text-foreground">
                     State-of-the-Art Gym
