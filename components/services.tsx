@@ -32,7 +32,8 @@ const services = [
     title: "Complete Mobility Screening",
     descriptionHtml: true,
     description:
-      'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport. <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Book now</a>.',
+      'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport.',
+      href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
   },
   {
     icon: Home,
