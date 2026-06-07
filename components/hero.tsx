@@ -68,7 +68,7 @@ export function Hero() {
                 alt="Runner in motion" 
                 className="w-full h-full object-cover"
               />
-              {/* Glassmorphism card overlay */}
+              {/* Glassmorphism card overlay
               <div className="absolute bottom-6 left-6 right-6 bg-background/80 backdrop-blur-xl rounded-2xl p-6 border border-border/50">
                 <div className="flex items-center gap-4">
                   <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -83,7 +83,7 @@ export function Hero() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
