@@ -13,7 +13,7 @@ export function MeetJuliet() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-border/50 shadow-lg">
               <img 
-                src="/images/juliet.jpg" 
+                src="/images/juliet-headshot.JPG" 
                 alt="Juliet St. Germain at a swimming pool" 
                 className="w-full h-full object-cover"
               />

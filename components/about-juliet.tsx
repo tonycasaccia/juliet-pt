@@ -78,7 +78,7 @@ export function AboutJuliet() {
             <div className="relative order-2 lg:order-1">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden border border-border/50 shadow-xl sticky top-32">
                 <img
-                  src="/images/juliet.jpg"
+                  src="/images/juliet-headshot.JPG"
                   alt="Juliet St. Germain"
                   className="w-full h-full object-cover"
                 />

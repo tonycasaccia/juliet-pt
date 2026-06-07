@@ -31,8 +31,13 @@ export function Hero() {
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-foreground leading-tight text-balance">
-              Helping the Bay Area
-              <span className="text-primary"> Move Better</span>
+              
+ 
+  Move Better.
+  <br />
+  <span className="text-primary">Perform Stronger.</span>
+  <br />
+  Recover Faster.
                
             </h1>
 
