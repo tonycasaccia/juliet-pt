@@ -109,7 +109,7 @@ export function Facilities() {
             <div className="rounded-3xl overflow-hidden">
               <img
                 src="/images/amenity-recovery.jpg"
-                alt="Private Treatment Room"
+                alt="Recovery Room"
                 className="h-[320px] w-full object-cover rounded-3xl"
               />
             </div>
@@ -121,10 +121,10 @@ export function Facilities() {
                 </div>
                 <div>
                   <p className="font-semibold text-foreground">
-                    Private Treatment Room
+                  Recovery Room
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    One-on-one manual therapy and personalized rehabilitation care.
+                    A quiet private space to rest, reset, and optimize recovery with Normatec, red light therapy, and massage tools.
                   </p>
                 </div>
               </div>
