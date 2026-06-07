@@ -34,6 +34,7 @@ const services = [
     description:
       'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport.',
       href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
+      external: true,
   },
   {
     icon: Home,
@@ -81,7 +82,13 @@ export function Services() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {services.map((service, index) => {
             const CardWrapper = service.href ? Link : "div";
-            const cardProps = service.href ? { href: service.href } : {};
+            const cardProps = service.href
+  ? {
+      href: service.href,
+      target: service.external ? "_blank" : undefined,
+      rel: service.external ? "noopener noreferrer" : undefined,
+    }
+  : {};
             
             return (
               <CardWrapper
