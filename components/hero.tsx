@@ -42,7 +42,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Personalized, evidence-based physical therapy and sports rehabilitation 
+              Personalized, evidence-based physical therapy and sport rehabilitation 
               helping you move well &amp; feel strong.
             </p>
 
