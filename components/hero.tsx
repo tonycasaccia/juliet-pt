@@ -64,7 +64,7 @@ export function Hero() {
           <div className="relative lg:h-[600px]">
             <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden border border-border/50 shadow-2xl">
               <img 
-                src="/images/hero-runner.jpg" 
+                src="/images/forest-run.jpg" 
                 alt="Runner in motion" 
                 className="w-full h-full object-cover"
               />
