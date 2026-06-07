@@ -75,7 +75,7 @@ export function About() {
               </p>
             </div>
             
-            {/* Link to IPA */}
+            {/*
             <a
               href="https://instituteofphysicalart.com/"
               target="_blank"
@@ -84,7 +84,7 @@ export function About() {
             >
               See more about treatment philosophy
               <ArrowRight className="h-4 w-4" />
-            </a>
+            </a>  Link to IPA */}
           </div>
         </div>
       </div>
