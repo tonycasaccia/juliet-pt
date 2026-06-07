@@ -39,10 +39,8 @@ export function MeetJuliet() {
               the root cause of dysfunction, not just the symptoms.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              She works with athletes from recreational to Olympic level across 
-              cycling, running, swimming, triathlon, and more. Her unique expertise 
-              in aquatic therapy and race medicine makes her a trusted partner for 
-              those who demand peak performance.
+              She works with athletes and non-athletes from recreational to Olympic level across 
+              cycling, running, swimming, triathlon, and more. She is published in research on resistance training, hypertrophy, and the physiological effects of mask wearing during exercise, and plans to remain actively involved in clinical research & presentation pertaining to such.
             </p>
 
             <div className="flex flex-wrap items-center gap-6">
