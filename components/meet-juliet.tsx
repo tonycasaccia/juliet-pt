@@ -30,7 +30,7 @@ export function MeetJuliet() {
               Meet Juliet St. Germain
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              With over 15 years of clinical experience, Juliet holds a Doctorate 
+              Juliet holds a Doctorate 
               in Physical Therapy from Northern Arizona University and is a{" "}
               <span className="text-primary font-medium">
                 Certified Functional Manual Therapist
