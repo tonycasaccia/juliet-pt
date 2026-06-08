@@ -145,7 +145,9 @@ export function InClinicService() {
               </div>
 
               <Button asChild size="lg" className="rounded-full">
-                <Link href="/#booking">
+                <Link  href="https://saintgermainphysicaltherapy.janeapp.com"
+                        target="_blank"
+                        rel="noopener noreferrer">
                   <Calendar className="mr-2 h-5 w-5" />
                   Book an Appointment
                 </Link>
@@ -246,7 +248,9 @@ export function InClinicService() {
               your initial consultation today.
             </p>
             <Button asChild size="lg" className="rounded-full">
-              <Link href="/#booking">
+              <Link  href="https://saintgermainphysicaltherapy.janeapp.com"
+                     target="_blank"
+                      rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 Book an Appointment
               </Link>
