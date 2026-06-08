@@ -13,7 +13,7 @@ export function MeetJuliet() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-border/50 shadow-lg">
               <img 
-                src="/images/juliet.jpg" 
+                src="/images/juliet-headshot.JPG" 
                 alt="Juliet St. Germain at a swimming pool" 
                 className="w-full h-full object-cover"
               />
@@ -30,7 +30,7 @@ export function MeetJuliet() {
               Meet Juliet St. Germain
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              With over 15 years of clinical experience, Juliet holds a Doctorate 
+              Juliet holds a Doctorate 
               in Physical Therapy from Northern Arizona University and is a{" "}
               <span className="text-primary font-medium">
                 Certified Functional Manual Therapist
@@ -39,10 +39,8 @@ export function MeetJuliet() {
               the root cause of dysfunction, not just the symptoms.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              She works with athletes from recreational to Olympic level across 
-              cycling, running, swimming, triathlon, and more. Her unique expertise 
-              in aquatic therapy and race medicine makes her a trusted partner for 
-              those who demand peak performance.
+              She works with athletes and non-athletes from recreational to Olympic level across 
+              cycling, running, swimming, triathlon, and more. She is published in research on resistance training, hypertrophy, and the physiological effects of mask wearing during exercise, and plans to remain actively involved in clinical research & presentation pertaining to such.
             </p>
 
             <div className="flex flex-wrap items-center gap-6">

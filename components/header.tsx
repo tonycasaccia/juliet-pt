@@ -11,6 +11,7 @@ import {
   Video,
   Sparkles,
   Waves,
+  Scan,
 } from "lucide-react";
 
 const services = [
@@ -25,6 +26,13 @@ const services = [
     title: "Aquatic Therapy",
     description: "Specialized aquatic rehabilitation at Burgess Pool.",
     href: "/services/aquatic-therapy",
+  },
+  {
+    icon: Scan,
+    title: "Complete Mobility Screening",
+    description: "Mobility assessment for longevity, function, and performance.",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
+      external: true,
   },
   {
     icon: Home,
@@ -47,8 +55,8 @@ const services = [
 ];
 
 const navLinks = [
-  { href: "#about", label: "About" },
   { href: "#meet-juliet", label: "Meet Juliet" },
+  { href: "#about", label: "About" },
   { href: "#facilities", label: "Facilities" },
   // { href: "#testimonials", label: "Testimonials" },
   // { href: "#faq", label: "FAQ" },
@@ -104,6 +112,8 @@ export function Header() {
                       <a
                         key={service.title}
                         href={service.href}
+                        target={service.external ? "_blank" : undefined}
+                        rel={service.external ? "noopener noreferrer" : undefined}
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-secondary/80 transition-colors group/item"
                       >
                         <div className="flex-shrink-0 h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover/item:bg-primary group-hover/item:text-primary-foreground transition-colors">
@@ -182,6 +192,8 @@ export function Header() {
                     <a
                       key={service.title}
                       href={service.href}
+                      target={service.external ? "_blank" : undefined}
+                      rel={service.external ? "noopener noreferrer" : undefined}
                       className="flex items-center gap-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >

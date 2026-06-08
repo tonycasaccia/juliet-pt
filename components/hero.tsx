@@ -31,13 +31,18 @@ export function Hero() {
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-foreground leading-tight text-balance">
-              Helping the Bay Area
-              <span className="text-primary"> Move Better</span>
+              
+ 
+  Move Better.
+  <br />
+  <span className="text-primary">Perform Stronger.</span>
+  <br />
+  Recover Faster.
                
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Personalized, evidence-based physical therapy and sports rehabilitation 
+              Personalized, evidence-based physical therapy and sport rehabilitation 
               helping you move well &amp; feel strong.
             </p>
 
@@ -59,11 +64,11 @@ export function Hero() {
           <div className="relative lg:h-[600px]">
             <div className="relative h-[400px] lg:h-full rounded-3xl overflow-hidden border border-border/50 shadow-2xl">
               <img 
-                src="/images/hero-runner.jpg" 
+                src="/images/forest-run.jpg" 
                 alt="Runner in motion" 
                 className="w-full h-full object-cover"
               />
-              {/* Glassmorphism card overlay */}
+              {/* Glassmorphism card overlay
               <div className="absolute bottom-6 left-6 right-6 bg-background/80 backdrop-blur-xl rounded-2xl p-6 border border-border/50">
                 <div className="flex items-center gap-4">
                   <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -78,7 +83,7 @@ export function Hero() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

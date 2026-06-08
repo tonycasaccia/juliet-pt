@@ -62,20 +62,20 @@ export function About() {
                 day, taking the first step toward healing, or simply trusting that your
                 body is capable of more than you believe.
               </p>
-              <p>
+              <p className="text-lg">
                 At the core of this practice is the recognition that the strength you&apos;re
                 looking for is already there. Whether you&apos;re an athlete chasing a goal
                 or someone simply working to feel better in your own body, we all
                 deserve care that meets us where we are.
               </p>
-              <p>
+              <p className="text-lg">
                 My role is to walk alongside you, listen, and build a record of what
                 your body can do, how it adapts, and measure how far it can go. This
                 serves as evidence and proof of strength that is entirely your own.
               </p>
             </div>
             
-            {/* Link to IPA */}
+            {/*
             <a
               href="https://instituteofphysicalart.com/"
               target="_blank"
@@ -84,7 +84,7 @@ export function About() {
             >
               See more about treatment philosophy
               <ArrowRight className="h-4 w-4" />
-            </a>
+            </a>  Link to IPA */}
           </div>
         </div>
       </div>

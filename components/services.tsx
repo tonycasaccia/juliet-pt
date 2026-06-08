@@ -27,6 +27,15 @@ const services = [
       "Specialized aquatic physical therapy at Burgess Pool combining advanced rehabilitation with the therapeutic properties of water. Thursdays 9-10 AM.",
     href: "/services/aquatic-therapy",
   },
+   {
+    icon: Scan,
+    title: "Complete Mobility Screening",
+    descriptionHtml: true,
+    description:
+      'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport.',
+      href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
+      external: true,
+  },
   {
     icon: Home,
     title: "Home Visits",
@@ -52,13 +61,7 @@ const services = [
     description:
       "Expert assessment and treatment for athletes and active individuals. Includes run assessment, bike assessment, swim assessment, and gait assessment to optimize your performance.",
   },
-  {
-    icon: Scan,
-    title: "Complete Mobility Screening",
-    descriptionHtml: true,
-    description:
-      'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport. <a href="https://saintgermainphysicaltherapy.janeapp.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Book now</a>.',
-  },
+ 
 ];
 
 export function Services() {
@@ -79,7 +82,13 @@ export function Services() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {services.map((service, index) => {
             const CardWrapper = service.href ? Link : "div";
-            const cardProps = service.href ? { href: service.href } : {};
+            const cardProps = service.href
+  ? {
+      href: service.href,
+      target: service.external ? "_blank" : undefined,
+      rel: service.external ? "noopener noreferrer" : undefined,
+    }
+  : {};
             
             return (
               <CardWrapper
@@ -108,9 +117,9 @@ export function Services() {
                   </p>
                 )}
 
-                {/* Learn more indicator for linked services */}
+                {/* Learn more indicator for linked services - grows the card on hover */}
                 {service.href && (
-                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="flex items-center gap-1 text-sm font-medium text-primary max-h-0 opacity-0 overflow-hidden group-hover:max-h-10 group-hover:mt-4 group-hover:opacity-100 transition-all duration-300">
                     Learn more
                     <ArrowRight className="h-4 w-4" />
                   </div>

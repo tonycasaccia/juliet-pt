@@ -145,7 +145,9 @@ export function InClinicService() {
               </div>
 
               <Button asChild size="lg" className="rounded-full">
-                <Link href="/#booking">
+                <Link  href="https://saintgermainphysicaltherapy.janeapp.com"
+                        target="_blank"
+                        rel="noopener noreferrer">
                   <Calendar className="mr-2 h-5 w-5" />
                   Book an Appointment
                 </Link>
@@ -153,12 +155,13 @@ export function InClinicService() {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/3] rounded-2xl bg-muted overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Building2 className="h-24 w-24 text-primary/30" />
-                </div>
-              </div>
+             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border/50 shadow-2xl">
+  <img
+    src="/images/hiking-trail.jpg"
+    alt="Hiking trail"
+    className="w-full h-full object-cover"
+  />
+</div>
             </div>
           </div>
         </div>
@@ -245,7 +248,9 @@ export function InClinicService() {
               your initial consultation today.
             </p>
             <Button asChild size="lg" className="rounded-full">
-              <Link href="/#booking">
+              <Link  href="https://saintgermainphysicaltherapy.janeapp.com"
+                     target="_blank"
+                      rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 Book an Appointment
               </Link>
