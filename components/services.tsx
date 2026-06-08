@@ -117,9 +117,9 @@ export function Services() {
                   </p>
                 )}
 
-                {/* Learn more indicator for linked services */}
+                {/* Learn more indicator for linked services - grows the card on hover */}
                 {service.href && (
-                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="flex items-center gap-1 text-sm font-medium text-primary max-h-0 opacity-0 overflow-hidden group-hover:max-h-10 group-hover:mt-4 group-hover:opacity-100 transition-all duration-300">
                     Learn more
                     <ArrowRight className="h-4 w-4" />
                   </div>

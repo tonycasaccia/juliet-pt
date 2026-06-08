@@ -20,11 +20,16 @@ const quickLinks = [
 ];
 
 const services = [
-  "Physical Therapy",
-  "Sports Rehabilitation",
-  "Performance Optimization",
-  "Injury Prevention",
-  "Return-to-Sport Training",
+  { label: "In Clinic", href: "/services/in-clinic" },
+  { label: "Aquatic Therapy", href: "/services/aquatic-therapy" },
+  {
+    label: "Complete Mobility Screening",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
+    external: true,
+  },
+  { label: "Home Visits", href: "#services" },
+  { label: "Virtual", href: "#services" },
+  { label: "Concierge", href: "#services" },
 ];
 
 const socialLinks = [
@@ -81,8 +86,15 @@ export function Footer() {
             </h4>
             <ul className="space-y-3">
               {services.map((service) => (
-                <li key={service}>
-                  <span className="text-background/60 text-sm">{service}</span>
+                <li key={service.label}>
+                  <a
+                    href={service.href}
+                    target={service.external ? "_blank" : undefined}
+                    rel={service.external ? "noopener noreferrer" : undefined}
+                    className="text-background/60 hover:text-background text-sm transition-colors"
+                  >
+                    {service.label}
+                  </a>
                 </li>
               ))}
             </ul>
