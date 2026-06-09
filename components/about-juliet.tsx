@@ -44,7 +44,7 @@ const credentials = [
     icon: Heart,
     title: "Race Medicine",
     items: [
-      "Medical team member — Western States 100 Mile Ultramarathon",
+      "Medical team — Western States 100 Mile Ultramarathon",
       "Acute orthopedic care for endurance athletes",
     ],
   },
