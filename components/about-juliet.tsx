@@ -242,13 +242,12 @@ export function AboutJuliet() {
               </p>
             </div>
 
-            <div className="aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-accent/20 via-primary/10 to-accent/5 border border-border flex items-center justify-center">
-              <div className="text-center p-8">
-                <Waves className="h-16 w-16 text-accent/50 mx-auto mb-4" />
-                <p className="text-sm text-muted-foreground">
-                  Aquatic therapy photo placeholder
-                </p>
-              </div>
+            <div className="aspect-video rounded-2xl overflow-hidden border border-border shadow-lg">
+              <img
+                src="/images/aquatic-therapy.jpg"
+                alt="Aquatic therapy session"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
