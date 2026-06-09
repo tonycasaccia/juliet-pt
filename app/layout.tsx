@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Juliet St. Germain | Elite Physical Therapy | Silicon Valley',
-  description: 'Elite physical therapy and sports rehabilitation in Silicon Valley. Personalized care for athletes, executives, and high-performers. Move better, perform stronger, recover faster.',
+  title: 'Juliet St. Germain | Physical Therapy | Silicon Valley',
+  description: 'Physical therapy and sports rehabilitation in Silicon Valley. Personalized care for athletes, executives, and high-performers. Move better, perform stronger, recover faster.',
   keywords: ['physical therapy', 'sports rehabilitation', 'Silicon Valley', 'athletic performance', 'injury prevention', 'mobility'],
   generator: 'v0.app',
   icons: {
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   openGraph: {
-  title: 'Juliet St. Germain | Elite Physical Therapy | Silicon Valley',
+  title: 'Juliet St. Germain | Physical Therapy | Silicon Valley',
   description:
-    'Elite physical therapy and sports rehabilitation in Silicon Valley. Personalized care for athletes, executives, and high-performers. Move better, perform stronger, recover faster.',
+    'Physical therapy and sports rehabilitation in Silicon Valley. Personalized care for athletes, executives, and high-performers. Move better, perform stronger, recover faster.',
   url: 'https://saintgermainphysicaltherapy.com',
   siteName: 'Saint Germain Physical Therapy',
   images: [
