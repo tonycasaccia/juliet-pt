@@ -13,10 +13,9 @@ import {
 
 const quickLinks = [
   { label: "Services", href: "#services" },
-  { label: "About", href: "#about" },
-  { label: "Why Choose Us", href: "#why-choose" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Meet Juliet", href: "#meet-juliet" },
+  { label: "About Us", href: "#about" },
+  { label: "Facilities", href: "#facilities" },
 ];
 
 const services = [
@@ -148,18 +147,7 @@ export function Footer() {
           </p>
 
           {/* Social links */}
-          <div className="flex items-center gap-4">
-            {socialLinks.map((social) => (
-              <a
-                key={social.label}
-                href={social.href}
-                className="h-10 w-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
-                aria-label={social.label}
-              >
-                <social.icon className="h-5 w-5 text-background/60" />
-              </a>
-            ))}
-          </div>
+          
         </div>
       </div>
     </footer>

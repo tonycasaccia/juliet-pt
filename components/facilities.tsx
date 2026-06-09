@@ -62,7 +62,7 @@ export function Facilities() {
 
             <div className="bg-background/80 backdrop-blur-md rounded-2xl p-6 border border-border/50">
               <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="h-12 w-12 rounded-full bg-primary/10 grid place-items-center shrink-0">
                   <Waves className="h-6 w-6 text-primary" />
                 </div>
                 <div>
@@ -89,7 +89,7 @@ export function Facilities() {
 
             <div className="bg-background/80 backdrop-blur-md rounded-2xl p-6 border border-border/50">
               <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="h-12 w-12 rounded-full bg-primary/10 grid place-items-center shrink-0">
                   <TreePine className="h-6 w-6 text-primary" />
                 </div>
                 <div>

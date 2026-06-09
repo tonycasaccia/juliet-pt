@@ -35,16 +35,16 @@ const credentials = [
     icon: BookOpen,
     title: "Research & Publications",
     items: [
-      "Published research on resistance training and hypertrophy",
-      "Physiological effects of mask wearing during exercise",
-      "Actively involved in clinical research and presentation",
+      "Periodization for maximizing hypertrophy",
+      "Resistance Training Volume and hypertrophy",
+      "Acute effects of mask wearing on exercise performance and recovery",
     ],
   },
   {
     icon: Heart,
     title: "Race Medicine",
     items: [
-      "Medical team member — Western States 100 Mile Ultramarathon",
+      "Medical team — Western States 100 Mile Ultramarathon",
       "Acute orthopedic care for endurance athletes",
     ],
   },
@@ -103,7 +103,10 @@ export function AboutJuliet() {
                   Juliet was born and raised in the beautiful high desert of Albuquerque, New Mexico. She earned her B.S. in Physiology & Exercise Science from the University of New Mexico and her Doctorate in Physical Therapy from Northern Arizona University, graduating with distinction.
                 </p>
                 <p className="leading-relaxed">
-                  She is published in research on resistance training, hypertrophy, and the physiological effects of mask wearing during exercise, and plans to remain actively involved in clinical research & presentation pertaining to such.
+                  Juliet is a Certified Functional Manual Therapist—specializing in an integrative whole-systems approach that addresses the root cause of dysfunction, not just the symptoms working with athletes and non-athletes from recreational to Olympic level across cycling, running, swimming, triathlon, and more.
+                </p>
+                <p className="leading-relaxed">
+                  Her expertise allows athletes & recreational / "life" athletes get back to what they love & feel good doing so.”
                 </p>
               </div>
 
@@ -145,11 +148,9 @@ export function AboutJuliet() {
                 Certified Functional Manual Therapist
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                After jumping through the rigorous process to become a CFMT, Juliet works with non-athletes and athletes from recreational to professional and Olympic levels across multiple sports disciplines.
+                Juliet jumped through the rigorous journey to become a Certified Functional Manual Therapist (CFMT) studying for 3 years and testing in 2024. This education offers a degree of specificity in treatment with a whole system approach and consideration and deep dive into the pertinent medical history that shapes the presenting limitation.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Her expertise allows athletes & recreational / &quot;life&quot; athletes get back to what they love & feel good doing so.
-              </p>
+              
               <a
                 href="https://instituteofphysicalart.com/"
                 target="_blank"
@@ -241,13 +242,12 @@ export function AboutJuliet() {
               </p>
             </div>
 
-            <div className="aspect-video rounded-2xl overflow-hidden bg-gradient-to-br from-accent/20 via-primary/10 to-accent/5 border border-border flex items-center justify-center">
-              <div className="text-center p-8">
-                <Waves className="h-16 w-16 text-accent/50 mx-auto mb-4" />
-                <p className="text-sm text-muted-foreground">
-                  Aquatic therapy photo placeholder
-                </p>
-              </div>
+            <div className="aspect-video rounded-2xl overflow-hidden border border-border shadow-lg">
+              <img
+                src="/images/aquatic-therapy.jpg"
+                alt="Aquatic therapy session"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

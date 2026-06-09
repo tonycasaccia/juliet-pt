@@ -35,18 +35,25 @@ const services = [
       'Movement as a measure of longevity. How well you move today is one of the strongest indicators of how well you\'ll live tomorrow. A comprehensive assessment of the mobility measures shown by research to be essential for daily life, recreation, and sport.',
       href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
       external: true,
+      cta: "Book now",
   },
   {
     icon: Home,
     title: "Home Visits",
     description:
       "One-on-one hour-long sessions in the comfort of your own home. Perfect for those with busy schedules or mobility restrictions.",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
+    external: true,
+    cta: "Book now",
   },
   {
     icon: Video,
     title: "Virtual Sessions",
     description:
       "One-on-one hour-long sessions virtually. Convenient access to expert care from anywhere.",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
+    external: true,
+    cta: "Book now",
   },
   {
     icon: Sparkles,
@@ -60,6 +67,9 @@ const services = [
     title: "Performance & Training",
     description:
       "Expert assessment and treatment for athletes and active individuals. Includes run assessment, bike assessment, swim assessment, and gait assessment to optimize your performance.",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
+    external: true,
+    cta: "Book now",
   },
  
 ];
@@ -117,10 +127,10 @@ export function Services() {
                   </p>
                 )}
 
-                {/* Learn more indicator for linked services - grows the card on hover */}
+                {/* CTA indicator for linked services - grows the card on hover */}
                 {service.href && (
                   <div className="flex items-center gap-1 text-sm font-medium text-primary max-h-0 opacity-0 overflow-hidden group-hover:max-h-10 group-hover:mt-4 group-hover:opacity-100 transition-all duration-300">
-                    Learn more
+                    {service.cta ?? "Learn more"}
                     <ArrowRight className="h-4 w-4" />
                   </div>
                 )}

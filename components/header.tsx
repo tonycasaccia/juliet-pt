@@ -86,7 +86,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center py-3">
+          <a href="/" className="flex items-center py-3">
             <span className="text-xl font-semibold tracking-tight text-foreground">
               Saint Germain Physical Therapy
             </span>
