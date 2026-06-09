@@ -35,9 +35,9 @@ const credentials = [
     icon: BookOpen,
     title: "Research & Publications",
     items: [
-      "Published research on resistance training and hypertrophy",
-      "Physiological effects of mask wearing during exercise",
-      "Actively involved in clinical research and presentation",
+      "Periodization for maximizing hypertrophy",
+      "Resistance Training Volume and hypertrophy",
+      "Acute effects of mask wearing on exercise performance and recovery",
     ],
   },
   {
