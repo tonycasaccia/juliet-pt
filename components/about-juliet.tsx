@@ -145,11 +145,9 @@ export function AboutJuliet() {
                 Certified Functional Manual Therapist
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                After jumping through the rigorous process to become a CFMT, Juliet works with non-athletes and athletes from recreational to professional and Olympic levels across multiple sports disciplines.
+                Juliet jumped through the rigorous journey to become a Certified Functional Manual Therapist (CFMT) studying for 3 years and testing in 2024. This education offers a degree of specificity in treatment with a whole system approach and consideration and deep dive into the pertinent medical history that shapes the presenting limitation.
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Her expertise allows athletes & recreational / &quot;life&quot; athletes get back to what they love & feel good doing so.
-              </p>
+              
               <a
                 href="https://instituteofphysicalart.com/"
                 target="_blank"
