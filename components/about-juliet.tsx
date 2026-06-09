@@ -103,7 +103,10 @@ export function AboutJuliet() {
                   Juliet was born and raised in the beautiful high desert of Albuquerque, New Mexico. She earned her B.S. in Physiology & Exercise Science from the University of New Mexico and her Doctorate in Physical Therapy from Northern Arizona University, graduating with distinction.
                 </p>
                 <p className="leading-relaxed">
-                  She is published in research on resistance training, hypertrophy, and the physiological effects of mask wearing during exercise, and plans to remain actively involved in clinical research & presentation pertaining to such.
+                  Juliet is a Certified Functional Manual Therapist—specializing in an integrative whole-systems approach that addresses the root cause of dysfunction, not just the symptoms working with athletes and non-athletes from recreational to Olympic level across cycling, running, swimming, triathlon, and more.
+                </p>
+                <p className="leading-relaxed">
+                  Her expertise allows athletes & recreational / "life" athletes get back to what they love & feel good doing so.”
                 </p>
               </div>
 
