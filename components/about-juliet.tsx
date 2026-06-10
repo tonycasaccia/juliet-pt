@@ -148,7 +148,7 @@ export function AboutJuliet() {
                 Certified Functional Manual Therapist
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Juliet jumped through the rigorous journey to become a Certified Functional Manual Therapist (CFMT) studying for 3 years and testing in 2024. This education offers a degree of specificity in treatment with a whole system approach and consideration and deep dive into the pertinent medical history that shapes the presenting limitation.
+                Juliet jumped through the rigorous journey to become a Certified Functional Manual Therapist (CFMT) studying for 3 years and testing in 2024. This education offers a degree of specificity in treatment, considering system-wide influence and deep dive into the pertinent medical history that shapes the presenting limitation.
               </p>
               
               <a
