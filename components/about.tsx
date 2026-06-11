@@ -210,7 +210,7 @@ export function About() {
               viewport={{ once: true, amount: 0.3 }}
               className="space-y-6 text-muted-foreground leading-relaxed"
             >
-              <p>
+              <p className="text-lg">
                 Strength isn&apos;t always loud. It looks like showing up on a
                 hard day, taking the first step toward healing, or simply
                 trusting that your body is capable of more than you believe.
