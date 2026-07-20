@@ -12,6 +12,7 @@ import {
   Sparkles,
   Waves,
   Scan,
+  Activity,
 } from "lucide-react";
 
 const services = [
@@ -38,19 +39,28 @@ const services = [
     icon: Home,
     title: "Home Visits",
     description: "One-on-one sessions in the comfort of your own home.",
-    href: "#services",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/",
   },
   {
     icon: Video,
     title: "Virtual",
     description: "One-on-one hour-long sessions virtually.",
-    href: "#services",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/",
   },
   {
     icon: Sparkles,
     title: "Concierge",
     description: "Personalized premium care. Email for details.",
     href: "#services",
+  },
+  {
+    icon: Activity,
+    title: "Performance & Training",
+    description:
+      "Expert assessment and treatment for athletes and active individuals.",
+    href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
+    
+    
   },
 ];
 
