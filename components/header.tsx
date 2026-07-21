@@ -40,12 +40,14 @@ const services = [
     title: "Home Visits",
     description: "One-on-one sessions in the comfort of your own home.",
     href: "https://saintgermainphysicaltherapy.janeapp.com/",
+    external: true,
   },
   {
     icon: Video,
     title: "Virtual",
     description: "One-on-one hour-long sessions virtually.",
     href: "https://saintgermainphysicaltherapy.janeapp.com/",
+    external: true,
   },
   {
     icon: Sparkles,
@@ -59,8 +61,7 @@ const services = [
     description:
       "Expert assessment and treatment for athletes and active individuals.",
     href: "https://saintgermainphysicaltherapy.janeapp.com/#staff_member/1",
-    
-    
+    external: true,
   },
 ];
 
