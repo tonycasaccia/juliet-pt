@@ -125,7 +125,7 @@ export function Footer() {
                 <Mail className="h-5 w-5 text-primary shrink-0" />
                 <a
                   href="mailto:saintgermainphysicaltherapy@gmail.com"
-                  className="text-background/60 hover:text-background text-sm transition-colors"
+                  className="text-background/60 hover:text-background text-sm transition-colors break-all"
                 >
                   saintgermainphysicaltherapy@gmail.com
                 </a>
