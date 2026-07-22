@@ -17,10 +17,6 @@ export const metadata: Metadata = {
   title: 'Juliet St. Germain | Physical Therapy | Silicon Valley',
   description: 'Physical therapy and sports rehabilitation in Silicon Valley. Personalized care for athletes, executives, and high-performers. Move better, perform stronger, recover faster.',
   keywords: ['physical therapy', 'sports rehabilitation', 'Silicon Valley', 'athletic performance', 'injury prevention', 'mobility'],
-  icons: {
-    icon: '/icon-light-32x32.png',
-    apple: '/apple-icon.png',
-  },
   openGraph: {
   title: 'Juliet St. Germain | Physical Therapy | Silicon Valley',
   description:
@@ -29,20 +25,20 @@ export const metadata: Metadata = {
   siteName: 'Saint Germain Physical Therapy',
   images: [
     {
-      url: '/icon-light-32x32.png',
-      width: 32,
-      height: 32,
+      url: '/og-image.png',
+      width: 1200,
+      height: 630,
       alt: 'Saint Germain Physical Therapy',
     },
   ],
   type: 'website',
 },
 twitter: {
-  card: 'summary',
+  card: 'summary_large_image',
   title: 'Saint Germain Physical Therapy',
   description:
     'Personalized physical therapy, rehabilitation, and performance care in Silicon Valley.',
-  images: ['/icon-light-32x32.png'],
+  images: ['/og-image.png'],
 },
 
 }
