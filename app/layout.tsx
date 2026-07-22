@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   siteName: 'Saint Germain Physical Therapy',
   images: [
     {
-      url: '/og-image.png',
+      url: '/og-image.jpg',
       width: 1200,
       height: 630,
-      alt: 'Saint Germain Physical Therapy',
+      alt: 'Saint Germain Physical Therapy — move better, perform stronger, recover faster.',
     },
   ],
   type: 'website',
@@ -38,7 +38,7 @@ twitter: {
   title: 'Saint Germain Physical Therapy',
   description:
     'Personalized physical therapy, rehabilitation, and performance care in Silicon Valley.',
-  images: ['/og-image.png'],
+  images: ['/og-image.jpg'],
 },
 
 }
